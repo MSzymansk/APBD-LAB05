@@ -148,7 +148,7 @@ public class EmpDeptSalgradeTests
                     where ee.DeptNo == e.DeptNo
                     select ee.Sal
                 ).Average()
-                select new { e.EName }.ToString()
+                select e.EName
             ;
 
         Assert.Contains("ALLEN", result);
